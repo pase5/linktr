@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PRANAV S. | Portfolio Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#e2ebd8",
+                        "on-primary-container": "#676d00",
+                        "outline-variant": "#c9c8b1",
+                        "on-primary-fixed-variant": "#464a00",
+                        "on-surface-variant": "#474837",
+                        "secondary": "#4d6544",
+                        "primary-container": "#e8f06c",
+                        "on-secondary-container": "#516948",
+                        "surface-container-high": "#ebe8da",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c0c9b7",
+                        "tertiary": "#586152",
+                        "secondary-fixed": "#cfebc1",
+                        "surface-dim": "#dddacc",
+                        "primary-fixed-dim": "#c6ce4e",
+                        "outline": "#787865",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcfaeb",
+                        "surface-container": "#f1eee0",
+                        "on-surface": "#1c1c13",
+                        "secondary-container": "#cce8be",
+                        "surface-tint": "#5e6300",
+                        "on-secondary-fixed": "#0b2006",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e5e3d5",
+                        "on-tertiary-fixed-variant": "#41493b",
+                        "on-tertiary-fixed": "#161e12",
+                        "surface": "#fcfaeb",
+                        "inverse-surface": "#313127",
+                        "primary-fixed": "#e2ea67",
+                        "surface-variant": "#e5e3d5",
+                        "inverse-primary": "#c6ce4e",
+                        "on-primary-fixed": "#1b1d00",
+                        "tertiary-fixed": "#dde6d3",
+                        "secondary-fixed-dim": "#b3cea6",
+                        "on-background": "#1c1c13",
+                        "on-tertiary-container": "#626a5b",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f4f1e3",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#364d2e",
+                        "background": "#fcfaeb",
+                        "primary": "#5e6300",
+                        "surface-container-low": "#f7f4e5",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "36px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "40px",
+                        "gutter": "16px",
+                        "container-max": "640px",
+                        "base": "8px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "xl": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Anton"],
+                        "display": ["Anton"],
+                        "label-bold": ["Manrope"],
+                        "headline-lg": ["Anton"],
+                        "label-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-lg-mobile": ["Anton"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "display": ["80px", {"lineHeight": "1.0", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["36px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #F4F7F0;
+            overflow-x: hidden;
+        }
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px #5e6300;
+        }
+        .neo-shadow-lg {
+            box-shadow: 8px 8px 0px 0px #5e6300;
+        }
+
+        /* ── Hero background ── */
+        .hero-bg {
+            background: linear-gradient(135deg, #DCE5D2 0%, #c8d9bc 50%, #b8d0a8 100%);
+            background-size: 300% 300%;
+            animation: heroGradient 8s ease infinite;
+        }
+        @keyframes heroGradient {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ── Floating blobs ── */
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.35;
+            pointer-events: none;
+            animation: floatBlob 12s ease-in-out infinite;
+        }
+        .blob-1 {
+            width: 220px; height: 220px;
+            background: #a8c694;
+            top: -60px; right: -40px;
+            animation-delay: 0s;
+        }
+        .blob-2 {
+            width: 160px; height: 160px;
+            background: #e8f06c;
+            bottom: 20px; left: -30px;
+            animation-delay: -4s;
+        }
+        .blob-3 {
+            width: 100px; height: 100px;
+            background: #5e6300;
+            top: 40%; left: 40%;
+            animation-delay: -8s;
+            opacity: 0.15;
+        }
+        @keyframes floatBlob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33%       { transform: translate(20px, -25px) scale(1.05); }
+            66%       { transform: translate(-15px, 15px) scale(0.95); }
+        }
+
+        /* ── Page background ambient orbs ── */
+        .bg-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+            z-index: 0;
+            animation: orbFloat 18s ease-in-out infinite;
+        }
+        .bg-orb-1 {
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, #c8d9bc55, transparent);
+            top: -100px; left: -150px;
+            animation-delay: 0s;
+        }
+        .bg-orb-2 {
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, #e8f06c33, transparent);
+            top: 50%; right: -100px;
+            animation-delay: -6s;
+        }
+        .bg-orb-3 {
+            width: 250px; height: 250px;
+            background: radial-gradient(circle, #a8c69433, transparent);
+            bottom: 10%; left: 20%;
+            animation-delay: -12s;
+        }
+        @keyframes orbFloat {
+            0%, 100% { transform: translate(0, 0); }
+            33%       { transform: translate(30px, -40px); }
+            66%       { transform: translate(-20px, 25px); }
+        }
+
+        /* ── Scroll reveal ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity 0.6s cubic-bezier(.22,1,.36,1), transform 0.6s cubic-bezier(.22,1,.36,1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-32px);
+            transition: opacity 0.6s cubic-bezier(.22,1,.36,1), transform 0.6s cubic-bezier(.22,1,.36,1);
+        }
+        .reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.5s cubic-bezier(.22,1,.36,1), transform 0.5s cubic-bezier(.22,1,.36,1);
+        }
+        .reveal-scale.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* ── Stagger delays ── */
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+        .delay-5 { transition-delay: 0.5s; }
+        .delay-6 { transition-delay: 0.6s; }
+
+        /* ── Connection card hover ── */
+        .conn-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.25s cubic-bezier(.22,1,.36,1),
+                        box-shadow 0.25s cubic-bezier(.22,1,.36,1),
+                        border-color 0.2s ease;
+        }
+        .conn-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg, transparent 30%, rgba(232,240,108,0.18) 50%, transparent 70%);
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+        .conn-card:hover::before {
+            transform: translateX(100%);
+        }
+        .conn-card:hover {
+            transform: translateY(-3px) translateX(-2px);
+            box-shadow: 6px 6px 0px 0px #5e6300;
+        }
+        .conn-card:active {
+            transform: translateY(1px) translateX(1px);
+            box-shadow: 2px 2px 0px 0px #5e6300;
+        }
+
+        /* ── Icon bounce on hover ── */
+        .conn-card:hover .icon-wrap {
+            animation: iconBounce 0.4s cubic-bezier(.36,.07,.19,.97) both;
+        }
+        @keyframes iconBounce {
+            0%, 100% { transform: scale(1); }
+            30%       { transform: scale(1.2) rotate(-5deg); }
+            60%       { transform: scale(0.95) rotate(3deg); }
+        }
+
+        /* ── Profile image float ── */
+        .profile-float {
+            animation: profileFloat 6s ease-in-out infinite;
+        }
+        @keyframes profileFloat {
+            0%, 100% { transform: translateY(0px); }
+            50%       { transform: translateY(-10px); }
+        }
+
+        /* ── Badge pulse ── */
+        .badge-pulse {
+            animation: badgePulse 2.5s ease-in-out infinite;
+        }
+        @keyframes badgePulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(94,99,0,0.3); }
+            50%       { box-shadow: 0 0 0 8px rgba(94,99,0,0); }
+        }
+
+        /* ── Nav scroll shrink ── */
+        nav.scrolled {
+            box-shadow: 0 2px 20px rgba(94,99,0,0.12);
+        }
+
+        .section-dark {
+            background-color: #23391C;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- Ambient background orbs -->
+<div class="bg-orb bg-orb-1"></div>
+<div class="bg-orb bg-orb-2"></div>
+<div class="bg-orb bg-orb-3"></div>
+<!-- Top Navigation Anchor -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b-2 border-on-surface">
+<div class="max-w-[640px] mx-auto px-gutter h-16 flex items-center justify-center">
+<span class="font-display text-headline-md tracking-tighter text-on-surface">PRANAV S.</span>
+</div>
+</nav>
+<main class="max-w-[640px] mx-auto min-h-screen pt-16 relative z-10">
+<!-- Hero Section -->
+<section class="hero-bg px-gutter pt-xl pb-md rounded-b-2xl border-x-2 border-b-2 border-on-surface relative overflow-hidden" style="min-height: 340px;">
+<!-- Floating blobs inside hero -->
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+<div class="flex flex-col gap-sm relative z-10">
+<div class="bg-primary-container inline-flex px-3 py-1 rounded-full border-2 border-on-surface w-fit mb-4 badge-pulse reveal reveal-left">
+<span class="font-label-bold text-label-sm uppercase">OPEN TO COLLABORATIONS</span>
+</div>
+<h1 class="font-display text-display text-on-surface uppercase leading-none reveal reveal-left delay-1">PRANAV<br/>S.</h1>
+<p class="font-body-lg text-on-surface-variant font-medium reveal reveal-left delay-2">Engineer &amp; UI/UX Designer</p>
+</div>
+<!-- Profile Image — larger & floating -->
+<div class="absolute -bottom-6 -right-2 w-[300px] h-[300px] md:w-[340px] md:h-[340px] pointer-events-none">
+<img class="w-full h-full object-contain object-bottom drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM5sqADilqwcGM2-ADFNq9G8IpKH6ED_DcLvCLnUec2QLKoDFRXcVkMBLvOHD0_pxDzE5iWmfio98JyqAN_czTgS9D2Y4ZnHF8WxuIOF_Z9T8qDLfLDz2Qi3FH2EuB1WsGkoV-X-kQ10OAksA74I7XVXLz8gPnqQU3s5SCBRwZ1JsJuMwe2_usOqDq1aurTo7ny7hyutl1d4Rn0CDGDhPJS0gudtwqjwzf7Z-r0mjnkalq5TRSh7xGnYViFWsB1LutDBY"/>
+</div>
+</section>
+<!-- Stats Bento Section -->
+
+<!-- Connections List -->
+<section class="mt-lg px-gutter pb-xl">
+<div class="flex justify-between items-end mb-md reveal">
+<h2 class="font-display text-headline-md text-on-surface">Connections</h2>
+</div>
+<div class="flex flex-col gap-base">
+<!-- LinkedIn -->
+<a class="conn-card group bg-surface border-2 border-on-surface p-md rounded-2xl flex items-center justify-between reveal delay-1" href="https://www.linkedin.com/in/pranavs5/" target="_blank" rel="noopener noreferrer">
+<div class="flex items-center gap-md">
+<div class="icon-wrap w-12 h-12 bg-primary-container rounded-full border-2 border-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">link</span>
+</div>
+<div>
+<p class="font-label-bold text-body-md text-on-surface">LinkedIn Professional</p>
+<p class="font-body-md text-label-sm text-on-surface-variant">@pranavs5</p>
+</div>
+</div>
+<div class="flex items-center gap-xs">
+<span class="bg-primary-container px-2 py-0.5 rounded border border-on-surface font-label-bold text-[10px]">TOP</span>
+<span class="material-symbols-outlined text-on-surface group-hover:translate-x-2 transition-transform duration-200">arrow_forward</span>
+</div>
+</a>
+<!-- Portfolio -->
+<a class="conn-card group bg-surface border-2 border-on-surface p-md rounded-2xl flex items-center justify-between reveal delay-2" href="https://pranavs.online" target="_blank" rel="noopener noreferrer">
+<div class="flex items-center gap-md">
+<div class="icon-wrap w-12 h-12 bg-secondary-container rounded-full border-2 border-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">language</span>
+</div>
+<div>
+<p class="font-label-bold text-body-md text-on-surface">Personal Portfolio</p>
+<p class="font-body-md text-label-sm text-on-surface-variant">pranavs.online</p>
+</div>
+</div>
+<div class="flex items-center gap-xs">
+<span class="bg-primary-container px-2 py-0.5 rounded border border-on-surface font-label-bold text-[10px]">TOP</span>
+<span class="material-symbols-outlined text-on-surface group-hover:translate-x-2 transition-transform duration-200">arrow_forward</span>
+</div>
+</a>
+<!-- Instagram -->
+<a class="conn-card group bg-surface border-2 border-on-surface p-md rounded-2xl flex items-center justify-between reveal delay-3" href="https://www.instagram.com/__pr.an.av_/" target="_blank" rel="noopener noreferrer">
+<div class="flex items-center gap-md">
+<div class="icon-wrap w-12 h-12 bg-tertiary-container rounded-full border-2 border-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">camera_alt</span>
+</div>
+<div>
+<p class="font-label-bold text-body-md text-on-surface">Instagram</p>
+<p class="font-body-md text-label-sm text-on-surface-variant">@__pr.an.av_</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface group-hover:translate-x-2 transition-transform duration-200">arrow_forward</span>
+</a>
+<!-- Gmail -->
+<a class="conn-card group bg-surface border-2 border-on-surface p-md rounded-2xl flex items-center justify-between reveal delay-4" href="mailto:pranavs2005@ieee.org">
+<div class="flex items-center gap-md">
+<div class="icon-wrap w-12 h-12 bg-error-container rounded-full border-2 border-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">mail</span>
+</div>
+<div>
+<p class="font-label-bold text-body-md text-on-surface">Email</p>
+<p class="font-body-md text-label-sm text-on-surface-variant">pranavs2005@ieee.org</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface group-hover:translate-x-2 transition-transform duration-200">arrow_forward</span>
+</a>
+<!-- Telegram -->
+<a class="conn-card group bg-surface border-2 border-on-surface p-md rounded-2xl flex items-center justify-between reveal delay-5" href="https://t.me/+916282296414" target="_blank" rel="noopener noreferrer">
+<div class="flex items-center gap-md">
+<div class="icon-wrap w-12 h-12 bg-secondary-container rounded-full border-2 border-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">send</span>
+</div>
+<div>
+<p class="font-label-bold text-body-md text-on-surface">Telegram</p>
+<p class="font-body-md text-label-sm text-on-surface-variant">+91 62822 96414</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface group-hover:translate-x-2 transition-transform duration-200">arrow_forward</span>
+</a>
+<!-- WhatsApp -->
+<a class="conn-card group bg-surface border-2 border-on-surface p-md rounded-2xl flex items-center justify-between reveal delay-6" href="https://wa.me/916282296414" target="_blank" rel="noopener noreferrer">
+<div class="flex items-center gap-md">
+<div class="icon-wrap w-12 h-12 bg-primary-container rounded-full border-2 border-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">chat</span>
+</div>
+<div>
+<p class="font-label-bold text-body-md text-on-surface">WhatsApp</p>
+<p class="font-body-md text-label-sm text-on-surface-variant">+91 6282296414</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface group-hover:translate-x-2 transition-transform duration-200">arrow_forward</span>
+</a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="w-full py-xl bg-surface border-t-2 border-on-surface">
+<div class="max-w-[640px] mx-auto px-gutter flex flex-col items-center gap-base">
+<span class="font-display text-headline-lg-mobile text-on-surface">PRANAV S.</span>
+<div class="flex gap-md">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<p class="font-body-md text-on-surface-variant mt-sm">© 2024 PRANAV S. BUILT FOR IMPACT.</p>
+</div>
+</footer>
+</main>
+<script>
+        // ── Scroll reveal via IntersectionObserver ──
+        const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => observer.observe(el));
+
+        // ── Nav shadow on scroll ──
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
+    </script>
+</body></html>
